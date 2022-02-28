@@ -5,13 +5,16 @@ import 'package:authentication_app_login/pages/SignUp.dart';
 import 'package:authentication_app_login/pages/userMain.dart';
 import 'package:authentication_app_login/routes/Routes.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key) ;
 
   // This widget is the root of your application.
   @override
